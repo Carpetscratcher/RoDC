@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>ChatGPT Chat</title>
     <link rel="stylesheet" href="style.css">
 </head>
@@ -29,12 +30,110 @@
                 </div>
             </div>
             <!-- Add more messages here -->
+=======
+    <title>ChatGPT Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #container {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        #sidebar {
+            flex: 0 0 300px;
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px;
+        }
+        #chat-container {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
+        }
+        .message {
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .user {
+            color: #333;
+            font-weight: bold;
+        }
+        .bot {
+            color: #666;
+            font-style: italic;
+        }
+        .message-body {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            display: inline-block;
+            max-width: 70%;
+        }
+        .user-message {
+            float: right;
+            background-color: #a2d9ff;
+        }
+        .bot-message {
+            float: left;
+            background-color: #c7ebc9;
+        }
+        input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="sidebar">
+            <h2>ChatGPT</h2>
+            <p>Welcome to ChatGPT</p>
+            <hr>
+            <h3>Channels</h3>
+            <ul>
+                <li>General</li>
+                <li>Random</li>
+                <li>Support</li>
+            </ul>
+        </div>
+        <div id="chat-container">
+            <div class="message bot">
+                <div class="message-body bot-message">
+                    Hello! How can I assist you today?
+                </div>
+            </div>
+            <!-- Messages will be populated here -->
+>>>>>>> 3e29ea8f7626f3b237a790b6a8052adc423c44de
         </div>
         <!-- <div class="input-container">
             <input type="text" class="input-field" placeholder="Type your message...">
             <button class="send-button">Send</button>
         </div> -->
     </div>
-
 </body>
 </html>
