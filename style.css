@@ -18,7 +18,7 @@ body {
 
 .chat-container {
     flex: 1;
-    background-color: #333;
+    background-color: rgba(52,53,65);
     padding: 20px;
     box-sizing: border-box;
     overflow-y: scroll;
@@ -47,7 +47,7 @@ body {
 
 .bot-message {
     text-align: left;
-    background-color: #333;
+    background-color: rgba(52,53,65);
     max-width: 35%;
     margin: 0 auto;
 }
@@ -83,10 +83,25 @@ body {
 .sidebar-header {
     margin-top: 10px; /* Adjust spacing between headers */
     /* Add any other styling you want for the headers */
-    font-size: smaller;
+    font-size: small;
 }
 
 .today {
     color: gray;
+    font-size: smaller;
+}
+
+.sidebar-image {
+    width: 30px; /* Adjust the width according to your preference */
+    border: 1px solid white;
+    float: left;
+    margin-right: 5%;
+}
+
+.sidebar-header span {
+    margin-right: 100px; /* Adjust margin to create space between text and image */
+}
+
+.sidebar-inhoud {
     font-size: smaller;
 }
