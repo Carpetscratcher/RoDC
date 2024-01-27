@@ -12,13 +12,24 @@
             background-color: #f4f4f4;
         }
         #container {
-            max-width: 800px;
+            display: flex;
+            max-width: 1200px;
             margin: 20px auto;
             background-color: #fff;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            padding: 20px;
             overflow: hidden;
+        }
+        #sidebar {
+            flex: 0 0 300px;
+            background-color: #34495e;
+            color: #fff;
+            padding: 20px;
+        }
+        #chat-container {
+            flex: 1;
+            padding: 20px;
+            overflow-y: auto;
         }
         .message {
             margin-bottom: 10px;
@@ -71,16 +82,25 @@
 </head>
 <body>
     <div id="container">
-        <div class="message bot">
-            <div class="message-body bot-message">
-                Hello! How can I assist you today?
-            </div>
+        <div id="sidebar">
+            <h2>ChatGPT</h2>
+            <p>Welcome to ChatGPT</p>
+            <hr>
+            <h3>Channels</h3>
+            <ul>
+                <li>General</li>
+                <li>Random</li>
+                <li>Support</li>
+            </ul>
         </div>
-        <div id="chat"></div>
-        <form id="message-form">
-            <input type="text" id="user-input" placeholder="Type your message...">
-            <input type="submit" value="Send">
-        </form>
+        <div id="chat-container">
+            <div class="message bot">
+                <div class="message-body bot-message">
+                    Hello! How can I assist you today?
+                </div>
+            </div>
+            <!-- Messages will be populated here -->
+        </div>
     </div>
 </body>
 </html>
