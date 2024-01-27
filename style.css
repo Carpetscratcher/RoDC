@@ -25,12 +25,13 @@ body {
 }
 
 .chat-header {
-    background-color: #00A67E;
+    font-weight: bold;
     color: #ffffff;
     padding: 10px;
-    text-align: center;
+    text-align: left;
     font-size: 18px;
     margin-bottom: 20px;
+    font-size: 150%;
 }
 
 .message {
@@ -104,4 +105,9 @@ body {
 
 .sidebar-inhoud {
     font-size: smaller;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
 }

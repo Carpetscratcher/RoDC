@@ -19,13 +19,13 @@
         <br>
         <div class="today">De epische kopjes van vandaag</div>
         <br>
-        <div class="sidebar-inhoud">Section 1</div>
+        <a class="sidebar-inhoud" href="Methode.html" id="Link">Methodologie</a>
         <br>
-        <div class="sidebar-inhoud">Section 2</div>
+        <a class="sidebar-inhoud" href="Methode.html">Methodologie</a>
     </div>
 
     <div class="chat-container">
-        <div class="chat-header">ChatGPT Chat</div>
+        <div class="chat-header">Inleiding</div>
         <div class="chat-messages">
             <div class="message bot-message">
                 <div class="message-content">According to all known laws
@@ -48,3 +48,16 @@
     </div>
 </body>
 </html>
+
+<!--Hier staat alle JS code
+
+HOUDT DEZE ONDERAAN AUB-->
+<script>
+    document.getElementById("Link").addEventListener("click", function(event) {
+    // Your custom logic goes here
+    console.log("Link clicked!");
+
+    // Prevent the default action of the link
+    event.preventDefault();
+});
+</script>
