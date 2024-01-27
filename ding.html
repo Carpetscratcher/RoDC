@@ -2,17 +2,85 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RoDC</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChatGPT Interface</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        #container {
+            max-width: 800px;
+            margin: 20px auto;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            overflow: hidden;
+        }
+        .message {
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        .user {
+            color: #333;
+            font-weight: bold;
+        }
+        .bot {
+            color: #666;
+            font-style: italic;
+        }
+        .message-body {
+            padding: 10px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            display: inline-block;
+            max-width: 70%;
+        }
+        .user-message {
+            float: right;
+            background-color: #a2d9ff;
+        }
+        .bot-message {
+            float: left;
+            background-color: #c7ebc9;
+        }
+        input[type="text"] {
+            width: calc(100% - 40px);
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            margin-right: 10px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
 </head>
-
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Hoi</h1>
+    <div id="container">
+        <div class="message bot">
+            <div class="message-body bot-message">
+                Hello! How can I assist you today?
+            </div>
         </div>
+        <div id="chat"></div>
+        <form id="message-form">
+            <input type="text" id="user-input" placeholder="Type your message...">
+            <input type="submit" value="Send">
+        </form>
     </div>
-
 </body>
-
 </html>
