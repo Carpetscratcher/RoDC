@@ -10,8 +10,7 @@
 
     <div class="sidebar">
         <div class="sidebar-header">Inhoudsopgave
-        <a href="Main.html">
-        <img class="sidebar-image" src="UvA_logo.png"></a></div>
+        <img class="sidebar-image" src="UvA_logo.png"></div>
         <!-- Add more content for recent chats here -->
         <br>
         <br>
@@ -20,10 +19,26 @@
         <br>
         <div class="today">De epische kopjes van vandaag</div>
         <br>
+        <br>
         <a class="sidebar-inhoud" href="Inleiding.html">Inleiding</a>
+        <br>
+        <br>
+        <a class="sidebar-inhoud" href="TK.html">Theoretisch kader</a>
+        <br>
         <br>
         <a class="sidebar-inhoud" href="Methode.html">Methodologie</a>
         <br>
+        <br>
+        <a class="sidebar-inhoud" href="Resultaten.html">Resultaten</a>
+        <br>
+        <br>
+        <a class="sidebar-inhoud" href="Conclusie.html">Conclusie</a>
+        <footer>
+            <a class="sidebar-inhoud" href="Over-ons.html">Over ons</a>
+            <br>
+            <br>
+            <a class="sidebar-inhoud" href="Referenties.html">Referenties</a>
+        </footer>
     </div>
 
     <div class="chat-container">
@@ -42,3 +57,18 @@
     </div>
 </body>
 </html>
+
+<script>
+    // Get the current URL
+    var currentUrl = window.location.href;
+
+    // Get all sidebar links
+    var sidebarLinks = document.querySelectorAll('.sidebar-inhoud');
+
+    // Loop through each link and check if its href matches the current URL
+    sidebarLinks.forEach(function(link) {
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // Add the 'active' class if the href matches the current URL
+        }
+    });
+</script>

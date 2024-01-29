@@ -107,7 +107,22 @@ body {
     font-size: smaller;
 }
 
+.huidige-file {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(61, 65, 101);
+    font-size: smaller;
+}
+
 a {
     text-decoration: none; /* Remove underline */
     color: inherit; /* Inherit color from parent */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
 }

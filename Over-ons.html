@@ -35,26 +35,18 @@
         <br>
         <a class="sidebar-inhoud" href="Conclusie.html">Conclusie</a>
         <footer>
-            <a class="sidebar-inhoud" href="Over-ons.html">Over ons</a>
+            <a class="sidebar-inhoud">Over ons</a>
             <br>
             <br>
-            <a class="sidebar-inhoud">Referenties</a>
+            <a class="sidebar-inhoud" href="Referenties.html">Referenties</a>
         </footer>
     </div>
 
     <div class="chat-container">
-        <div class="chat-header">Inleiding</div>
+        <div class="chat-header">Over ons</div>
         <div class="chat-messages">
             <div class="message bot-message">
-                <div class="message-content">According to all known laws
-                    of aviation,
-                    there is no way a bee
-                    should be able to fly.
-                    Its wings are too small to get
-                    its fat little body off the ground.
-                    The bee, of course, flies anyway
-                    because bees don't care
-                    what humans think is impossible.
+                <div class="message-content">Hieronder staat een stukje geschreven over de auteurs van het project.
                 </div>
             </div>
             <!-- Add more messages here -->
@@ -66,3 +58,18 @@
     </div>
 </body>
 </html>
+
+<script>
+    // Get the current URL
+    var currentUrl = window.location.href;
+
+    // Get all sidebar links
+    var sidebarLinks = document.querySelectorAll('.sidebar-inhoud');
+
+    // Loop through each link and check if its href matches the current URL
+    sidebarLinks.forEach(function(link) {
+        if (link.href === currentUrl) {
+            link.classList.add('active'); // Add the 'active' class if the href matches the current URL
+        }
+    });
+</script>
