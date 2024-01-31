@@ -161,6 +161,7 @@ footer {
 .chat-footer {
     box-sizing: content-box;
     position: fixed;
+    text-align: center;
     background-color: rgba(52,53,65);
     width: 1000px;
     height: 110px;
