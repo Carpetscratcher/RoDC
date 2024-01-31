@@ -1,0 +1,196 @@
+body {
+    font-family: Söhne, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Ubuntu, Cantarell, "Noto Sans", sans-serif, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    text-size-adjust: 100%;
+    font-feature-settings: normal;
+    font-variation-settings: normal;
+    line-height: 1.5;
+    tab-size: 4;
+}
+
+.sidebar {
+    width: 15%;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.chat-container {
+    flex: 1;
+    background-color: rgba(52,53,65);
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+
+.header-container {
+    width: auto;
+}
+
+.chat-header {
+    box-sizing: content-box;
+    position: fixed;
+    background-color: rgba(52,53,65);
+    width: 1000px;
+    height: 60px;
+    top: 0;
+}
+
+.header-text {
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+    margin-top: 20px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    position: absolute;
+}
+
+.message {
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color:  rgba(52,53,65);
+}
+
+.user-message {
+    text-align: right;
+    background-color: #d4edda;
+}
+
+.bot-message {
+    text-align: left;
+    background-color: rgba(52,53,65);
+    max-width: 50%;
+    margin: 0 auto;
+    margin-bottom: 200px;
+}
+
+.message-content {
+    word-wrap: break-word;
+    color: #d1d5db;
+    text-align: left;
+    line-height: 28px;
+    font-weight: 500;
+    font-size: 15px;
+    margin-top: 4%;
+    overflow-y: auto;
+}
+
+.input-container {
+    display: flex;
+    margin-top: 20px;
+}
+
+.input-field {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+}
+
+.send-button {
+    padding: 8px;
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.sidebar-header {
+    margin-top: 10px; /* Adjust spacing between headers /
+    / Add any other styling you want for the headers */
+    font-size: .875rem;
+    line-height: 1.25rem;
+    font-weight: 500;
+}
+
+.today {
+    color: gray;
+    font-size: 12px;
+}
+
+.sidebar-image {
+    width: 30px; /* Adjust the width according to your preference */
+    border: 1px solid white;
+    float: left;
+    margin-right: 5%;
+    border-radius: 9999px;
+}
+
+.sidebar-header span {
+    margin-right: 100px; /* Adjust margin to create space between text and image */
+}
+
+.sidebar-inhoud {
+    /* Make the text normal */
+    font-weight: 500; 
+    font-size: .875rem;
+    line-height: 1.25rem;
+
+}
+
+.huidige-file {
+    height: 50px;
+    width: 100px;
+    background-color: rgb(61, 65, 101);
+    font-size: smaller;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Inherit color from parent */
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.chat-footer {
+    box-sizing: content-box;
+    position: fixed;
+    text-align: center;
+    background-color: rgba(52,53,65);
+    width: 1000px;
+    height: 110px;
+    bottom: 0;
+}
+
+.footer-text {
+    font-weight: 500;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    margin-left: 250px;
+    border: 1px solid white;
+}
+
+
+.sidebar-inhoud:hover {     background-color: #4d4d4d; }
+
+.image {
+    width: 30px; /* Adjust the width according to your preference */
+    border: 1px solid white;
+    float: left;
+    margin-right: 5%;
+    border-radius: 9999px;
+    position: absolute;
+    left: 10px;
+
+}
+
