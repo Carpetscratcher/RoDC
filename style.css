@@ -49,6 +49,7 @@ body {
     margin-top: 20px;
     font-size: 1.125rem;
     line-height: 1.75rem;
+    position: absolute;
 }
 
 .message {
@@ -78,6 +79,8 @@ body {
     line-height: 28px;
     font-weight: 500;
     font-size: 15px;
+    margin-top: 4%;
+    overflow-y: auto;
 }
 
 .input-container {
@@ -120,7 +123,7 @@ body {
     border: 1px solid white;
     float: left;
     margin-right: 5%;
-    
+    border-radius: 9999px;
 }
 
 .sidebar-header span {
@@ -178,3 +181,15 @@ footer {
 
 
 .sidebar-inhoud:hover {     background-color: #4d4d4d; }
+
+.image {
+    width: 30px; /* Adjust the width according to your preference */
+    border: 1px solid white;
+    float: left;
+    margin-right: 5%;
+    border-radius: 9999px;
+    position: absolute;
+    left: 10px;
+
+}
+

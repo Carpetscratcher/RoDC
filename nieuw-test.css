@@ -1,25 +1,21 @@
-body, html {
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
-    width: 80%; /* Adjust as needed */
-    margin: 0 auto;
-  }
-  
-  .header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #f0f0f0; /* Adjust as needed */
-    padding: 20px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Optional: adds a shadow */
-  }
-  
-  .content {
-    margin-top: 80px; /* Adjust to match the height of the fixed header */
-    padding: 20px;
-  }
-  
+.scrolling-container {
+  overflow-y: auto; /* Enable vertical scrolling */
+  height: 300px; /* Set a fixed height for the scrolling container */
+  position: relative; /* Ensure relative positioning for absolute child */
+  border: 1px solid #ccc; /* Just for demonstration */
+}
+
+.container {
+  position: relative;
+  padding-left: 120px; /* Adjust as needed to accommodate the image width */
+  padding-top: 20px; /* Add padding to ensure text doesn't overlap with the image */
+}
+
+.image {
+  position: absolute;
+  top: 0;
+  left: -10px; /* Adjust as needed to position the image outside */
+  width: 100px; /* Adjust the width as needed */
+  height: auto; /* Maintain aspect ratio */
+  z-index: 1; /* Ensure the image appears above the text */
+}
